@@ -282,7 +282,8 @@ li a {
   background-color: #04AA6D;
 }
 .sticky {
-    position: fixed;
+    position: fixed; 
+}
 .about {
     background-color: lightpink;
     background: linear-gradient(yellow black);
