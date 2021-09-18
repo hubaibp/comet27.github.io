@@ -283,23 +283,49 @@ li a {
 .active {
   background-color: #04AA6D;
 
-.about {
+    
+    .About {
+ 
     background-color: lightpink;
     background: linear-gradient(yellow black);
     border-radius: 6px;
-    margin: 100px 20px 20px 20px;
+    margin: 90px 20px 20px 20px;
+  }
+    
+
+img.image-1{
+  border-radius: 200%;
+  margin-top: 50px;
 }
-div.gallery {
-    width: 100%;
-    background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin-bottom: 25px;
-  }
-  div.content {
-    text-align: center;
-    padding: 10px 20px;
-  }
-  img {
-    padding: 50px;
-    border-radius: 50%;
-  }
+p1 {
+  font-family: cursive;
+}
+h1 {
+  font-family: fantasy;
+  text-align: center;
+}
+div.edu {
+  text-align: center;
+  background-color: lightskyblue;
+  border-radius: 6px;
+  margin: 10px 20px 20px 20px;
+  width: 50%;
+  transition: all 0.2s ease-in-out;
+  height: 100px;
+}
+
+.image-1 {
+  grid-area: image-1;
+  transition: all 0.2s ease-in-out;
+}
+
+div.edu:hover {
+  transform: scale(1.1);
+}
+img.school {
+ width: 100%;
+ border-radius: 6px;
+ 
+
+}
+
