@@ -263,6 +263,7 @@ body {
   overflow: hidden;
   background-color: #333;
   position: fixed;
+  top: 0;
 }
 
 li {
@@ -281,15 +282,12 @@ li a {
 
 .active {
   background-color: #04AA6D;
-}
-.sticky {
-    position: fixed; 
-}
+
 .about {
     background-color: lightpink;
     background: linear-gradient(yellow black);
     border-radius: 6px;
-    margin: 20px 20px 20px 20px;
+    margin: 100px 20px 20px 20px;
 }
 div.gallery {
     width: 100%;
