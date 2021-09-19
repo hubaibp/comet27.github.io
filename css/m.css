@@ -142,7 +142,7 @@ div.about {
   width: 100%;
 
   background:none;
-  position: relative;
+  position:fixed;
   animation-name: aboutt;
   animation-duration: 2s;  
   animation-fill-mode: both;
