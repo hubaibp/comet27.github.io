@@ -1,56 +1,67 @@
-
+body {
+  background: radial-gradient(#4568dc,#b06ab3);
+}
 .navbar {
-    background-color:yellow;
+    background-color:gold;
     width:100%;
     border-radius:5px;
     text-align: center;
     
   }
+  
   ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-  position: fixed;
-  top: 0;
-      width:100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    width: 100%;  
+    position: fixed;
+    top: 0;
+    left: 0;}
+  
+  li {
+    float: left;
+    text-align: center;
+  }
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+div.hello {
+  padding-top: 20px;
+  
 }
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-
-
-.active {
-  background-color: #04AA6D;
-}
-
-    
-    .About {
+ 
+  
+  .active {
+    background-color: #04AA6D;
+  }
+ 
+.about {
  
     background-color: lightpink;
-    background: linear-gradient(yellow black);
     border-radius: 6px;
-    margin: 90px 20px 20px 20px;
+    margin: 50px 20px 20px 20px;
+    background: linear-gradient(red,white);
+    box-shadow: 10px 10px 10px 1px black;
+
   }
     
 
-.image-1{
+img.image-1{
   border-radius: 100%;
   margin-top: 50px;
 }
 p1 {
-  font-family: cursive;
+  font-family: ;
 }
 h1 {
   font-family: fantasy;
@@ -58,12 +69,14 @@ h1 {
 }
 div.edu {
   text-align: center;
-  background-color: lightskyblue;
+  background :linear-gradient(#7b4397,#dc2430);
   border-radius: 6px;
   margin: 10px 20px 20px 20px;
-  width: 50%;
+  width: 90%;
   transition: all 0.2s ease-in-out;
-  height: 100px;
+  height: 100%;
+  box-shadow: 10px 10px 10px 1px black;
+
 }
 
 .image-1 {
@@ -72,12 +85,77 @@ div.edu {
 }
 
 div.edu:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 img.school {
  width: 100%;
  border-radius: 6px;
+ height: 200px;
  
 
 }
+div.edu1 {
+    width: 100px;
 
+    background:none;
+    position: relative;
+    animation-name: education;
+    animation-duration: 2s;  
+    animation-fill-mode: both;
+    animation-delay: 2s;
+  }
+  
+  @keyframes education {
+    from {left: 0px;}
+    to {left: 110px;}
+  }
+.button {
+  background-color:whitesmoke;
+  border: 2px solid black;
+  color:black;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 6px;
+  width: 100px;
+
+
+}
+button:hover { 
+  background-color: lightseagreen;
+  color: darkblue;
+
+}
+.footer {
+  background-color:grey;
+  height: 150px;
+  margin: 0;
+  border: solid black;
+  border-radius: 6px;
+}
+
+div.about {
+  width: 100%;
+
+  background:none;
+  position: relative;
+  animation-name: aboutt;
+  animation-duration: 2s;  
+  animation-fill-mode: both;
+ 
+}
+
+@keyframes aboutt {
+  from {left: -300px;}
+  to {left: -20px; background-color: hotpink;}
+}
+.icon {
+  width: 30px;
+}
+.icon:hover {
+  border-radius: 100%;
+}
