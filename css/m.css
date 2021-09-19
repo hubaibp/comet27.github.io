@@ -98,7 +98,7 @@ div.edu1 {
     width: 100px;
 
     background:none;
-    position: relative;
+    position: fixed;
     animation-name: education;
     animation-duration: 2s;  
     animation-fill-mode: both;
