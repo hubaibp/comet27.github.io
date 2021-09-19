@@ -293,8 +293,8 @@ li a {
   }
     
 
-img.image-1{
-  border-radius: 200%;
+.image-1{
+  border-radius: 100%;
   margin-top: 50px;
 }
 p1 {
