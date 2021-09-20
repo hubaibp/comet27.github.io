@@ -1,7 +1,10 @@
-body {   
-scroll:smooth;
+body { 
 
   background: radial-gradient(#4568dc,#b06ab3);
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .navbar {
@@ -79,16 +82,18 @@ div.edu {
   transition: all 0.2s ease-in-out;
   height: 100%;
   box-shadow: 10px 10px 10px 1px black;
+  z-index: -1;
 
 }
 
 .image-1 {
   grid-area: image-1;
   transition: all 0.2s ease-in-out;
+  z-index: -1;
 }
 
 div.edu:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 img.school {
  width: 100%;
@@ -99,7 +104,7 @@ img.school {
 }
 div.edu1 {
     width: 100px;
-
+    z-index:-1;
     background:none;
     position: relative;
     animation-name: education;
@@ -166,7 +171,5 @@ div.about {
 outline: none;
  }
 a,a:hover,a:focus,a:active {
-  text-decoration: none;
-  color: inherit;
   -webkit-tap-highlight-color: transparent;
 }
