@@ -1,6 +1,9 @@
-body {
+body {   
+scroll:smooth;
+
   background: radial-gradient(#4568dc,#b06ab3);
 }
+
 .navbar {
     background-color:gold;
     width:100%;
