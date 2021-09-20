@@ -164,11 +164,9 @@ div.about {
 .icon:hover {
   border-radius: 100%;
 outline: none;
-
-}
-
-a, a:hover, a:focus, a:active {
-      text-decoration: none;
-      color: inherit;
  }
-
+a,a:hover,a:focus,a:active {
+  text-decoration: none;
+  color: inherit;
+  -webkit-tap-highlight-color: transparent;
+}
