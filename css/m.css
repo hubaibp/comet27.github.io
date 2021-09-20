@@ -158,4 +158,5 @@ div.about {
 }
 .icon:hover {
   border-radius: 100%;
+outline:none;
 }
