@@ -1,175 +1,261 @@
-body { 
-
-  background: radial-gradient(#4568dc,#b06ab3);
+* {
+  box-sizing: border-box;
 }
-
+body {
+  background-color: #474e5d;
+  font-family: Helvetica, sans-serif;
+}
 html {
   scroll-behavior: smooth;
 }
-
-.navbar {
-    background-color:gold;
-    width:100%;
-    border-radius:5px;
-    text-align: center;
-    
-  }
-  
-  ul {
+h1 {
+  font-family: Oswald;
+}
+p {
+  font-family: Baloo;
+}
+ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #333;
-    width: 100%;  
     position: fixed;
     top: 0;
-    left: 0;}
-  
+    width: 100%;
+    left: 0;
+    
+  }
   li {
     float: left;
-    text-align: center;
-  }
-  li a:hover:not(.active) {
-    background-color: #111;
+ 
   }
   
   li a {
-    display: block;
+    display: inline-block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 17px;
     text-decoration: none;
   }
-div.hello {
-  padding-top: 20px;
-  
-}
- 
-  
+  li a:hover {
+    background-color: ivory;
+    color: black;
+   
+  }
+
   .active {
-    background-color: #04AA6D;
+    background-color: rgb(128, 255, 0);
   }
+div.main {
+  height: 550px;
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
  
-.about {
- 
-    background-color: lightpink;
-    border-radius: 6px;
-    margin: 50px 20px 20px 20px;
-    background: linear-gradient(red,white);
-    box-shadow: 10px 10px 10px 1px black;
+  
+  
+  
 
-  }
-    
+}  
+ .about-1 {
+  border-left: solid 15px lightcoral;
+  width: 350px;
+  height: 500px;
+  margin: 100px 45px;
+  border-radius: 5px;
+  box-shadow: black 10px 10px 10px 7px;
 
-img.image-1{
+} 
+ img.hubaib {
+  width: 250px;
   border-radius: 100%;
-  margin-top: 50px;
+  padding: 20px;
 }
-p1 {
-  font-family: ;
+ img.scroll {
+   width: 50px;
+   
+ }
+ .about-2 {
+   
+   height: 500px;
+   width: 350px;
+   flex-basis: 50%;
+   text-align: center;
+   border-radius: 5px;
+   padding:0;
+   margin: 100px 45px;
+   border-left: solid 15px lightcoral;
+   box-shadow: black 10px 10px 10px 7px;
+ }
+ div.sec {
+   padding-top: 200px;
+ }
+  
+ body {
+  background-color: grey;
 }
-h1 {
-  font-family: fantasy;
-  text-align: center;
+*{
+  box-sizing: border-box;
 }
-div.edu {
-  text-align: center;
-  background :linear-gradient(#7b4397,#dc2430);
-  border-radius: 6px;
-  margin: 10px 20px 20px 20px;
-  width: 90%;
-  transition: all 0.2s ease-in-out;
-  height: 100%;
-  box-shadow: 10px 10px 10px 1px black;
-  z-index: -1;
-
-}
-
-.image-1 {
-  grid-area: image-1;
-  transition: all 0.2s ease-in-out;
-  z-index: -1;
-}
-
-div.edu:hover {
-  transform: scale(1.1);
-}
-img.school {
- width: 100%;
- border-radius: 6px;
- height: 200px;
- 
-
-}
-div.edu1 {
-    width: 100px;
-    z-index:-1;
-    background:none;
+.timeline {
     position: relative;
-    animation-name: education;
+    max-width: 1200px;
+    margin: 0 auto;
+    z-index: -1;
+  }
+  
+  /* The actual timeline (the vertical ruler) */
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 50px;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+  
+  /* Container around content */
+  .container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+    z-index: -1;
+  }
+  
+  /* The circles on the timeline */
+  .container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color:white;
+    border: 4px solid white;
+    top: 15px;
+    border-radius: 50%;
+    z-index: -1;
+  }
+  
+  /* Place the container to the left */
+  .left {
+    left: 0px;
+  }
+  
+  /* Place the container to the right */
+  .right {
+    left: 50%;
+  }
+  
+
+  /* Fix the circle for containers on the right side */
+  .right::after {
+    left: -16px;
+  }
+  
+  /* The actual content */
+  .contentl {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+    animation-name: educationl;
+    animation-duration: 2s;  
+    animation-fill-mode:inherit;
+    z-index: -1;
+    animation-delay: 0s;
+    position: both;
+  }
+  
+  @keyframes educationl {
+    from {left: -250px;}
+    to {left: 0%;}
+  }
+  .contentr {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+    animation-name: educationr;
     animation-duration: 2s;  
     animation-fill-mode: both;
-    animation-delay: 2s;
+    animation-direction: reverse;
+    animation-delay: 0s;
+    
+    z-index: -1;
   }
   
-  @keyframes education {
+  @keyframes educationr {
     from {left: 0px;}
-    to {left: 110px;}
+    to {left: 300px;}
   }
-.button {
-  background-color:whitesmoke;
-  border: 2px solid black;
-  color:black;
-  padding: 10px 10px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 12px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 6px;
-  width: 100px;
+  
+  /* Media queries - Responsive timeline on screens less than 600px wide */
+  @media only screen and (max-width: 768px) {
+  /* Place the timelime to the left */
+    .timeline::after {
+      left: 31px;
+    }
+  
+  /* Full-width containers */
+    .container {
+      width: 100%;
+      padding-left: 70px;
+      padding-right: 25px;
+    }
+  
+  /* Make sure that all arrows are pointing leftwards */
+   
+  
+  /* Make sure all circles are at the same spot */
+    .left::after, .right::after {
+      left: 15px;
+    }
+  
+  /* Make all right containers behave like the left ones */
+    .right {
+      left: 0%;
+    }
 
-
+    .contentl {
+      animation-direction: reverse;
+      z-index: -1;
+      
+    }
+    @keyframes educationl {
+      from {left: 0px;}
+      to {left: 300px;}
+    }
+    .contentr {
+      z-index: -1;
+    }
+    div.main 
+    {width: 280px;
+      display: block;
+      left: 0;}
+    }
+   .about-1{
+     width: 100%;
+     margin-left: 30px;
+     height: 450px;
+   }
+  .about-2{
+    width: 100%;
+    margin-left: 30px;
+    height: 220px;
+    margin-top: 20px;
+  }
+  div.sec {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .time {
+    margin-top: 30px;
+  }
 }
-button:hover { 
-  background-color: lightseagreen;
-  color: darkblue;
 
-}
-.footer {
-  background-color:grey;
-  height: 150px;
-  margin: 0;
-  border: solid black;
-  border-radius: 6px;
-}
-
-div.about {
-  width: 100%;
-
-  background:none;
-  position:relative;
-  animation-name: aboutt;
-  animation-duration: 2s;  
-  animation-fill-mode: both;
-  z-index: -1;
  
-}
-
-@keyframes aboutt {
-  from {left: -300px;}
-  to {left: -20px; background-color: hotpink;}
-}
-.icon {
-  width: 32px;
-  outline: none;
-}
-.icon:hover {
-  border-radius: 100%;
-outline: none;
- }
-a,a:hover,a:focus,a:active {
-  -webkit-tap-highlight-color: transparent;
-}
+ 
