@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HUBAIB</title>
-    <link rel="stylesheet" href="css/m.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Baloo|Gluten"
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Baloo|Gluten">
+    <link rel="stylesheet" href="aos.css">
 </head>
-<body> <div class="dropdown" style="position: fixed; top:0px; background-color: white; width: 100%; left: 0; padding: 5px;"> <button >☰</button>
+<body> <div class="dropdown" style="position: fixed; top:0px; background-color:none; width: 100%; left: 0; padding: 5px;"> <button >☰</button>
         <div class="dropdown-content">
           <a href="#education">Education</a>
           <a href="#skills">skills</a>
@@ -22,36 +24,40 @@
         that exists in the world.”
                                  -Elon Musk</pre></div>
     <div class="about-1">
-    <center> <img src="h.jpg" class="hubaib" id="id="top"
+    <center> <img src="images/h.jpg" class="hubaib" id="id="top"
     </center> 
-   <center><p >Hi,Iam Hubaib first year Btech student,currently 
+   <center> <p>Hi,Iam Hubaib first year Btech student,currently 
        pursuing Btech at LBS college of engineering,located in
-        north part of kerala</p></center>
+        north part of kerala</p> </center>
        <center><a href="#education"><img src="https://cdn4.iconfinder.com/data/icons/navigation-40/24/chevron-force-down-128.png" class="scroll"></a></center></div>
-        <div class="about-2">
+        <div class="about-2" data-aos="fade-up"
+    data-aos-offset="290">
             <center><h1>ABOUT</h1></center>
            <center> <p>my name is Hubaib.iam from greenary state of
                  india namily kerala.currently learning about the scope 
                 of mechine learning and artificial intelligence</p>
         </div>
     </div>
-    <!--schools-->
+    <!--schools  "flip-up"-->
     <div class="sec"><h1 style="text-align: center;" id="education">EDUCATION</h1></div>
    <div class="timeline">
       <div class="container left">
-        <div class="contentl">
+        <div class="contentl" data-aos="flip-up"
+        data-aos-offset="260">
           <h2>MIC</h2>
           <p class="datee">2004-2012</p>
         </div>
       </div>
       <div class="container right">
-        <div class="contentr">
+        <div class="contentr" data-aos="flip-up"
+        data-aos-offset="260">
           <h2>VHMHSS</h2>
           <p  class="datee">2013-2018</p>
         </div>
       </div>
       <div class="container left">
-          <div class="contentl">
+          <div class="contentl" data-aos="flip-up"
+          data-aos-offset="260">
             <h2>LBSCEK</h2>
             <p  class="datee">2020-2024</p>
           </div>
@@ -96,7 +102,7 @@
         <div class="skills">
             <div class="details">
                 <span>jQuery</span>
-                <span>68%</span>
+                <span>60%</span>
             </div>
             <div class="bar">
                 <div id="jQuery-bar"></div>
@@ -106,6 +112,7 @@
 </div> 
 
 <!--projects-->
+ 
 
 
 <a href="#top"><img src="https://cdn4.iconfinder.com/data/icons/management-and-strategy/64/strategic_management_rocket_launch_bolted_go_up_-128.png" alt="rocket" class="rocket" ></a>
@@ -122,6 +129,11 @@
     <img src="https://cdn3.iconfinder.com/data/icons/picons-social/57/43-twitter-128.png" class="icon"></a>
 <p style="font-size: 15px; padding-top: 15px;">♡︎ thanks,2021,© Hubaib</p>
 </center>
-</footer>   
+</footer> 
+
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="aos.js"></script>
+<script type="text/javascript">
+    AOS.init();</script>
 </body>
 </html>
