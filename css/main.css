@@ -52,14 +52,13 @@ div.main {
    
    height: 500px;
    width: 350px;
-   flex-basis: 50%;
-   text-align: center;
+   
+   
    border-radius: 5px;
-   padding-top:10px;
-   margin: 100px 45px;
-   border-left: solid 15px lightcoral;
+  
+   border-left: solid 15px;
    border-image: linear-gradient( darkblue, darkorchid) 1;
-  ;
+   
  }
  div.sec {
    padding-top: 250px;
@@ -160,8 +159,7 @@ div.main {
       padding-right: 25px;
     }
   
-  /* Make sure that all arrows are pointing leftwards */
-   
+    
   
   /* Make sure all circles are at the same spot */
     .left::after, .right::after {
@@ -187,6 +185,9 @@ div.main {
     margin-left: 30px;
     height: 220px;
     margin-top: 20px;
+    z-index: -1;
+    position: relative;
+    
   }
   div.sec {
     width: 100%;
@@ -201,7 +202,7 @@ div.main {
 
 }
 .dropbtn {
-  color: white;
+  color:black;
   padding: 16px;
   font-size: 16px;
   border: none;
@@ -218,6 +219,7 @@ div.main {
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  border-radius: 5px;
 }
 
 .dropdown-content a {
@@ -313,7 +315,7 @@ h2{
 
 }
 #html-bar{
-  animation: html-fill 2s forwards;
+  animation: html-fill 2s 6s forwards;
   animation-duration: 3s;
   z-index: -1;
 }
@@ -323,7 +325,7 @@ h2{
   }
 }
 #css-bar{
-  animation: css-fill 2s forwards;
+  animation: css-fill 2s 6s forwards;
 }
 @keyframes css-fill{
   100%{
@@ -331,15 +333,15 @@ h2{
   }
 }
 #js-bar{
-  animation: js-fill 2s forwards;
+  animation: js-fill 2s 6s forwards;
 }
 @keyframes js-fill {
   100%{
-      width: 72%;
+      width: 68%;
   }
 }
 #jQuery-bar{
-  animation: jQuery-fill 2s forwards;
+  animation: jQuery-fill 2s  6s forwards;
 }
 @keyframes jQuery-fill{
   100%{
