@@ -35,7 +35,7 @@ div.main {
   height: 500px;
   margin: 0;
   border-radius: 5px;
-  border-image: linear-gradient( darkblue, darkorchid) 1;
+  border-image: linear-gradient( black, white) 1;
   }
 
   
@@ -57,7 +57,7 @@ div.main {
    border-radius: 5px;
   
    border-left: solid 15px;
-   border-image: linear-gradient( darkblue, darkorchid) 1;
+   border-image: linear-gradient( white, black) 1;
    
  }
  div.sec {
