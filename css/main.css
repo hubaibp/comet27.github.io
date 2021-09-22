@@ -315,7 +315,7 @@ h2{
 
 }
 #html-bar{
-  animation: html-fill 2s 6s forwards;
+  animation: html-fill 2s 8s forwards;
   animation-duration: 3s;
   z-index: -1;
 }
@@ -325,7 +325,7 @@ h2{
   }
 }
 #css-bar{
-  animation: css-fill 2s 6s forwards;
+  animation: css-fill 2s 8s forwards;
 }
 @keyframes css-fill{
   100%{
@@ -333,7 +333,7 @@ h2{
   }
 }
 #js-bar{
-  animation: js-fill 2s 6s forwards;
+  animation: js-fill 2s 8s forwards;
 }
 @keyframes js-fill {
   100%{
@@ -341,7 +341,7 @@ h2{
   }
 }
 #jQuery-bar{
-  animation: jQuery-fill 2s  6s forwards;
+  animation: jQuery-fill 2s  8s forwards;
 }
 @keyframes jQuery-fill{
   100%{
