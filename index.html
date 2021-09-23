@@ -138,10 +138,13 @@
 <script src="aos.js"></script>
 <script type="text/javascript">
     AOS.init();</script>
-<script type="text/javascript"> if(window.history.pushState) {
-    window.history.pushState('', '/', window.location.pathname)
-} else {
-    window.location.hash = '';
-}</script>
+<script>
+    function removehash(){
+        setTimeout(function(){
+            history.replaceState("", document.title, window.location.pathname);
+        }, 1);
+    }
+</script>
+
 </body>
 </html>
