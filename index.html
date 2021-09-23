@@ -138,5 +138,10 @@
 <script src="aos.js"></script>
 <script type="text/javascript">
     AOS.init();</script>
+<script type="text/javascript"> if(window.history.pushState) {
+    window.history.pushState('', '/', window.location.pathname)
+} else {
+    window.location.hash = '';
+}</script>
 </body>
 </html>
