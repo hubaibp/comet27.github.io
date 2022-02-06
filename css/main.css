@@ -48,7 +48,7 @@ a,a:hover,a:focus,a:active {
    width: 50px;
    
  }
- .about-2 {
+ /*.about-2 {
    height: 500px;
    width: 350px;
    border-radius: 5px;
@@ -59,7 +59,7 @@ a,a:hover,a:focus,a:active {
  div.sec {
    padding-top: 250px;
  }
-  
+  */
  body {
   background-color: grey;
 }
@@ -334,9 +334,7 @@ h2{
   }
 }
 .footer {
-  border: solid 4px;
-  border-radius: 10px;
-  border-image: linear-gradient(to right, darkblue, darkorchid) 1;
+
   margin: 0;
 } 
 img.icon {
